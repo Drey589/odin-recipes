@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+    ul {
+  display: table;
+  margin: 0 auto;
+  font-size: x-large;
+}
+    </style>
+<body>
+    <h1 style="text-align: center;">Philipines Recipes</h1>
+    <div class="row">
+    <div class="column">
+    <img src="/images/cover-696x451.jpg" alt="Philipine Foods" style="float: right;">
+    </div>
+    <div class="column">
+    <h1 style="text-align: center;">Filipino Recipes to try out</h1>
+    <br>
+    <ul>
+        <li><a href="Adobo.htm">Adobo</a></li>
+        <li><a href="sinegang.html">Sinegang</a></li>
+        <li><a href="karekare.html">karekare</a></li>
+    </ul>
+   
+    </div>
+    </div>
+
+</body>
+</html>
