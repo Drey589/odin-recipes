@@ -6,7 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adobo Recipe</title>
 </head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      
+      font-family: SourceSerif, helvetica, sans-serif;
+      /* Should be removed. Only for demonstration */
+    }
+    .down{
+        padding-left: 4cm;
+        padding-right: 4cm;
+        padding-top: 1ch;
+        padding-bottom: 1ch;
+
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    .adobo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+.Odin{
+    background-color: rgb(255, 115, 0);
+    color: white;
+    text-align: center;
+    font-family: SourceSerif, helvetica, sans-serif;
+}
+
+</style>
 <body>
-    <h1>Adobo Recipe</h1>
+    <h1 class="Odin">Odin Recipes</h1>
+   <div class="row">
+    <div class="column" style="background-color: rgb(224, 224, 224);">
+        <h1 style="text-align: center;">Chicken Adobo</h1>
+        <h3>Description:</h2>
+        
+    
+            <p>
+    Chicken Adobo or Adobong Manok is a popular Filipino dish but it originated from the 
+    Spanish word adobar or marinate. By virtue of its etymology,it is a dish that involves 
+    marinating the chicken meat in a soy sauce, vinegar and some spices. 
+    </p>
+
+    <h3>Ingredients:</h3>
+    <ul>
+        <li>8 whole chicken legs (about 4 pounds), cut into drumstick and thigh sections</li>
+        <li>1 1/2 cups distilled white vinegar</li>
+        <li>3 garlic cloves, crushed</li>
+        <li>2 bay leaves</li>
+        <li>1/2 tablespoon whole black peppercorns, crushed lightly</li>
+        <li>3/4 cup soy sauce</li>
+        <li>3 tablespoons vegetable oil</li>
+        <li>cooked rice as an accompaniment</li>
+     </ul>
+        
+        
+    </div>
+    <div class="column">
+        <img src="/images/adobo.jpeg" alt="Adobo" class="adobo">
+    </div>
+   </div>
+   <hr>
+   <div class="down" style="background-color: rgb(224, 224, 224);">
+   <h2 style="text-align: center;">Recipe Instruction</h2>
+   <ol>
+    <li>In a large kettle combine the chicken, the vinegar, the garlic, the bay leaves, the peppercorns, 
+        and 1 cup water, bring the mixture to a boil, and simmer it, covered, 
+        for 20 minutes. Add the soy sauce and simmer the mixture, covered, 
+        for 20 minutes. Transfer the chicken with tongs to a plate and boil the liquid for 10 minutes, 
+        or until it is reduced to about 1 cup. Let the sauce cool, 
+        remove the bay leaves, and skim the fat from the surface.
+    </li>
+    <br>
+    <li>In a large skillet heat the oil over high heat until it is hot but not smoking and 
+        in it sauté the chicken, patted dry, in batches, turning it, for 5 minutes, or until 
+        it is browned well. Transfer the chicken to a rimmed platter, pour the sauce, heated, over it, and serve the chicken with the rice.</li>
+   </ol>
+   </div>
 </body>
 </html>
